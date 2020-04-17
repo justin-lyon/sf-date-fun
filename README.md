@@ -6,7 +6,9 @@ Showcase conversions and formatting of Dates and Times between Apex, Javascript,
 
 ## Formatting Opinion
 
-The LWC Base Component, `lightning-formatted-date-time`, is a wrapper around Intl.DateTimeFormatter. By abstracting the Intl.DateTimeFormatter away, it may be marginally easier to use, however knowing neither of these, the learning curve is identical. But direct access to the Intl.DateTimeFormatter means more options and greater control.
+The LWC Base Component, `lightning-formatted-date-time`, is a wrapper around Intl.DateTimeFormatter. By abstracting the Intl.DateTimeFormatter away, it may be marginally easier to use.
+
+Knowing neither of these, the learning curve is identical. But direct access to the Intl.DateTimeFormatter means more options and greater control.
 
 Knowing both of these, it's a question of where would you like the complexity / config? Would you prefer to have more code in your template (base component) or would you prefer more code in javascript (Intl)?
 
