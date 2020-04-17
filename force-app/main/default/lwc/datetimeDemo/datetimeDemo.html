@@ -1,0 +1,15 @@
+<template>
+  <lightning-button
+    label="Sort"
+    variant="brand"
+    onclick={onClickSort} ></lightning-button>
+  <div class="slds-grid slds-wrap">
+    <template for:item="time" for:each={times}>
+      <div class="slds-col slds-size_1-of-1" key={time}>
+        <c-datetime-item
+          epoch-time={time}
+          dtf-options={dtfOptions}></c-datetime-item>
+      </div>
+    </template>
+  </div>
+</template>

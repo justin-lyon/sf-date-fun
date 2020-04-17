@@ -1,0 +1,45 @@
+<template>
+  <div class="slds-grid slds-gutters slds-wrap">
+    <div class="slds-col slds-size_1-of-6">
+      <label
+        class="slds-text-color_weak"
+        for="epochTime">Epoch Time</label>
+      <div id="epochTime">
+          {epochTime}
+      </div>
+    </div>
+    <div class="slds-col slds-size_1-of-6">
+      <label
+        class="slds-text-color_weak"
+        for="intlFormatted">Intl DateTimeFormat</label>
+      <div id="intlFormatted">
+        {intlDateTimeFormatted}
+      </div>
+    </div>
+    <div class="slds-col slds-size_1-of-6">
+      <label
+        class="slds-text-color_weak"
+        for="ltngFormatted">lightning-formatted-date-time</label>
+      <div>
+        <lightning-formatted-date-time
+          id="ltngFormatted"
+          value={epochTime}
+          year="numeric"
+          month="numeric"
+          day="numeric"
+          hour="2-digit"
+          minute="2-digit"
+          time-zone-name="short"
+          hour12="true"></lightning-formatted-date-time>
+      </div>
+    </div>
+    <div class="slds-col">
+      <label
+        class="slds-text-color_weak"
+        for="dateObject">JS Date Object</label>
+      <div id="dateObject">
+        {dateObject}
+      </div>
+    </div>
+  </div>
+</template>
